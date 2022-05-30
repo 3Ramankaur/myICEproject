@@ -3,6 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+//Ramandeep Kaur (Student id-991661772)
 package cardtrickice1;
 
 /** define card value and suits
