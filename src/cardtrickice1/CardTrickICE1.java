@@ -20,9 +20,13 @@ public class CardTrickICE1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) 
-    {
-        Card[] magicHand = new Card[7]; //Array of object
-        for( int i=0;i<magicHand.length;i++)
+    {   Card luckyCard= new Card();
+        luckyCard.setValue(5);
+        luckyCard.setSuits("clubs");
+        
+        Card[] magicHand = new Card[8]; //Array of object
+        magicHand[0]=luckyCard;
+        for( int i=1;i<magicHand.length;i++)
         {
             Card c1 = new Card();
             c1.setValue(c1.number());//use a method to generate random *13
