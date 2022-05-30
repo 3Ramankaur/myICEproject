@@ -32,8 +32,13 @@ public class CardTrickICE1 {
             c1.setValue(c1.number());//use a method to generate random *13
             c1.setSuits(c1.suit());//random method suit 
             magicHand[i]=c1;
-            System.out.println(magicHand[i]);
+            
         }
+       for(int i=0;i<magicHand.length;i++){
+       
+           System.out.println(magicHand[i]);
+       }
+     
         //step 2:take input 
        Scanner sc = new Scanner(System.in);
        System.out.println("Enter a number between 1 and 13");
