@@ -16,6 +16,8 @@ public class Card
     private String suits; //encapsulation
     //constant
     public static final String [] SUITS = { "diamonds","clubs","spades","hearts"};
+    private int a;
+    private String b;
 
     /**
      * @return the value
@@ -45,7 +47,18 @@ public class Card
         this.suits = suits;
     }
    //number
+    public int number(){
+     a=((int)(Math.random()*(13)+1));
+     return a;
+    }
     
     //method for suits
+    public String suit(){
+    b=(SUITS[(int)(Math.random()*4)]);
+    return b;}
     
+    public String toString(){
+    return(value + " "+ suits);}
+    
+   
 }
